@@ -88,7 +88,6 @@ int decompress(int fd, int fdOut){
 
 			}
 
-			buffW[seek] = '\n';
 			int bytesWrited = write(fdOut, buffW, seek);
 			if(bytesWrited == -1) return -1; 
 			totalBytesWrited += bytesWrited;
